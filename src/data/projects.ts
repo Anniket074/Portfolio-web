@@ -130,7 +130,7 @@ export const categories: Record<string, CategoryData> = {
       {
         title: "DanzerArt Motion Logo",
         description: "I created a 3D animated motion video logo intro for our own startup.",
-        video: "https://drive.google.com/file/d/1gTI4cptBVvUz8SJjODyX_A2X6mFjqhte/view?usp=sharing"
+        video: "https://youtu.be/1rKOC5aytIo"
       },
       {
         title: "Mechanic Arm & Pistol",
