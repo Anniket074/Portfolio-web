@@ -115,22 +115,22 @@ export const categories: Record<string, CategoryData> = {
       {
         title: "Earth Defender",
         description: "Earth Defender: Asteroid Rain is a 3D arcade-style space defense game where players protect Earth from incoming asteroids.\nThe gameplay is powered by real-time data using NASA’s NeoWs API, making each asteroid dynamically generated.\nKey mechanics include shooting, collision physics, and an Earth health system for survival-based gameplay.\nThe project demonstrates API integration, data-driven design, and scalable game architecture in Unity.",
-        video: "/videos/2d/Earth Defender.mp4"
+        video: "https://youtu.be/b3iCoI4B0E0"
       },
       {
         title: "Stackmaster 3D",
         description: "It’s a simple yet engaging stacking game where players spawn blocks and aim to stack them perfectly on top of each other. Along with gameplay development, I focused on implementing a monetization system using Google Ads (via Unity), integrating Rewarded Ads, Interstitial Ads, and Banner Ads.",
-        video: "/videos/3d/StackMaster3d.mp4"
+        video: "https://youtube.com/shorts/XaS8PDmGp1w?feature=share"
       },
       {
         title: "Top Down Shooting",
         description: "A prototype segment of my project working on a TopDown shooting game system for one of our clients.",
-        video: "/videos/3d/Top Down Shooting.mp4"
+        video: "https://youtu.be/QrZj_QP6rXU"
       },
       {
         title: "DanzerArt Motion Logo",
         description: "I created a 3D animated motion video logo intro for our own startup.",
-        video: "/videos/3d/DanzerArt Motion Logo.mp4"
+        video: "https://drive.google.com/file/d/1gTI4cptBVvUz8SJjODyX_A2X6mFjqhte/view?usp=sharing"
       },
       {
         title: "Mechanic Arm & Pistol",
