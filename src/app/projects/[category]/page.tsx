@@ -3,6 +3,33 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 
+function getYouTubeEmbedUrl(url: string) {
+  try {
+    const parsed = new URL(url);
+
+    if (parsed.hostname === "youtu.be") {
+      const id = parsed.pathname.replace("/", "");
+      return id ? `https://www.youtube.com/embed/${id}` : null;
+    }
+
+    if (
+      parsed.hostname === "www.youtube.com" ||
+      parsed.hostname === "youtube.com" ||
+      parsed.hostname === "m.youtube.com"
+    ) {
+      const id = parsed.searchParams.get("v");
+      if (id) return `https://www.youtube.com/embed/${id}`;
+
+      const match = parsed.pathname.match(/^\/shorts\/([^/]+)/);
+      if (match?.[1]) return `https://www.youtube.com/embed/${match[1]}`;
+    }
+
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 export function generateStaticParams() {
   return Object.keys(categories).map((category) => ({
     category,
@@ -45,24 +72,43 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
               
               <div className="w-full aspect-video bg-white/5 rounded-xl mb-8 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-colors overflow-hidden relative">
-                {project.video ? (
-                  project.video.match(/\.(mp4|webm|ogg)$/i) ? (
-                    <video 
-                      src={project.video} 
-                      autoPlay 
-                      loop 
-                      muted 
-                      playsInline 
-                      className="w-full h-full object-contain bg-black/20"
-                    />
-                  ) : (
-                    <img 
-                      src={project.video} 
+                {project.video ? (() => {
+                  const youtubeEmbed = getYouTubeEmbedUrl(project.video);
+                  if (youtubeEmbed) {
+                    return (
+                      <iframe
+                        src={`${youtubeEmbed}?mute=1&autoplay=1&loop=1&playlist=${encodeURIComponent(
+                          youtubeEmbed.split("/").pop() ?? ""
+                        )}&controls=0&modestbranding=1&rel=0`}
+                        title={project.title}
+                        className="w-full h-full bg-black/20"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowFullScreen
+                      />
+                    );
+                  }
+
+                  if (project.video.match(/\.(mp4|webm|ogg)$/i)) {
+                    return (
+                      <video
+                        src={project.video}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-contain bg-black/20"
+                      />
+                    );
+                  }
+
+                  return (
+                    <img
+                      src={project.video}
                       alt={project.title}
                       className="w-full h-full object-contain bg-black/20"
                     />
-                  )
-                ) : (
+                  );
+                })() : (
                   <span className="text-white/20 text-sm tracking-widest uppercase">Project Preview</span>
                 )}
               </div>

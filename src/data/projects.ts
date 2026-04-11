@@ -74,37 +74,37 @@ export const categories: Record<string, CategoryData> = {
       {
         title: "Hill Climb Replica",
         description: "As you know, in this game we have to cross the finish line without losing our driver's life. We also have to collect all the coins that come in our track to increase our highscore.\n\nControls - Touchscreen, Thrust and Brake.\nCore concept - Vehicle Mechanics, 2D Tiles, Input system.",
-        video: "/videos/2d/Hill Climb Replica.mp4"
+        video: "https://youtu.be/ZXrxIl7H3EE"
       },
       {
         title: "Brick Breaker",
         description: "Aim - To break the bricks by shooting the ball.\nControls - Touch Screen to aim.\nConcepts - Raycast2D, Scoring, Material Scripting.",
-        video: "/videos/2d/Brick Breaker.mp4"
+        video: "https://youtube.com/shorts/9TcQlZzst2Y?feature=share"
       },
       {
         title: "Running Saga",
         description: "The aim of this game is to help Mr. Hopper reach the finish flag with at least coins worth 125 to go to the next level. There are three types of coins: Bronze (5), Silver (10), Gold (20). Save Mr. Hopper from traps while traveling.\n\nCore Concept - Platformer mechanics.",
-        video: "/videos/2d/Running Saga.mp4"
+        video: "https://youtu.be/5xSBbt3rdaM"
       },
       {
         title: "Rocket Launch",
         description: "You need to land the rocket successfully at its landing pad. Beware of obstacles.",
-        video: "/videos/2d/Rocket Launch 2.mp4"
+        video: "https://youtu.be/6PiVl8fWNPE"
       },
       {
         title: "Save Me !! My friend",
         description: "The game is all about saving the life of a person who is about to hang. Your correct guess will save him, otherwise, every wrong letter will progress his hanging.\nPlease be careful while giving your answer.",
-        video: "/videos/2d/Save Me !! My friend.mp4"
+        video: "https://youtu.be/WkDgLKALYw0"
       },
       {
         title: "Replica of Flappy Bird",
         description: "You need to control the bird and help him to escape the poles successfully in order to survive and score high.",
-        video: "/videos/2d/Replica of Flappy Bird.mp4"
+        video: "https://youtube.com/shorts/k5ichcXu8bQ?feature=share"
       },
       {
         title: "Guess The Number",
         description: "Objective: Here you have to guess a number within a certain range.\nControls: Input via Keyboard.",
-        video: "/videos/2d/Guess The Number.mp4"
+        video: "https://youtube.com/shorts/gHEvkmBO1_A?feature=share"
       }
     ]
   },
