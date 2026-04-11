@@ -18,52 +18,52 @@ export const categories: Record<string, CategoryData> = {
       {
         title: "SpaceWar VR",
         description: "This game is based on Space war in which you have to attack the enemy's base using a Fighter Aircraft, whereas the Enemy has advanced High-tech Laser machine guns and patrolling flying robots. You need to successfully conquer the enemy base to win the space battle.",
-        video: "/videos/vr/SpaceWarVR.mp4"
+        video: "https://youtu.be/3U8uC94ovqM"
       },
       {
         title: "Solar System Simulation",
         description: "In this VR game, I have created a Solar System Simulation in which planets interact in their respective orbits, so they perfectly revolve around the sun. In this project, the gravitational effects are also demonstrated.",
-        video: "/videos/vr/SolarSystem Simulation.mp4"
+        video: "https://youtube.com/shorts/jjIceHAkmr0?feature=share"
       },
       {
         title: "Battleground FPS VR",
         description: "Developed an action-packed VR FPS where players defend multiple zones (e.g., industrial areas) against waves of enemies using weapons like pistols and automatic rifles. Implemented realistic shooting mechanics, enemy AI, and immersive first-person combat using Unity XR Toolkit and C#.",
-        video: "/videos/vr/BattlegroundFPS.mp4"
+        video: "https://youtu.be/6Qn-G0YMo9k"
       },
       {
         title: "Crunch Dunk VR (Doritos Collaboration)",
         description: "Developed a branded VR arcade experience in collaboration with Doritos, where players toss their favorite flavored chips into a basket within a 60-second challenge. Integrated real-time scoring and user data tracking using Google Firebase for analytics and performance storage.",
-        video: "/videos/vr/Crunch Dunk.mp4"
+        video: "https://youtu.be/_etkj6H0dFU"
       },
       {
         title: "David vs Goliath VR",
         description: "Developed an immersive VR combat game where players take on the role of David to battle Goliath using realistic bow-and-arrow mechanics. Implemented physics-based archery, first-person interaction, and engaging boss AI using Unity XR Toolkit and C#.",
-        video: "/videos/vr/goliath and david.mp4"
+        video: "https://youtube.com/shorts/J9WMb-JMT6k?feature=share"
       },
       {
         title: "Element Entropy VR",
         description: "Developed an interactive VR experience where users visualize entropy changes of chemical elements within a 3D cube environment while exploring their atomic structures. Implemented real-time data visualization, immersive UI, and 3D atomic models using Unity XR Toolkit and C#.",
-        video: "/videos/vr/ElementVR.mp4"
+        video: "https://youtu.be/0LqYhPQ9syw"
       },
       {
         title: "Takeshi's CastleVR",
         description: "This project is a Virtual Simulation of the Japanese Show 'Takeshi's Castle', where the player has to cross different Levels in order to win the Game, passing through various guards.",
-        video: "/videos/vr/Takeshi Castle VR.mp4"
+        video: "https://youtu.be/-KXXO3CQYQU"
       },
       {
         title: "Maze VR",
         description: "This project is a Virtual Simulation of a Maze, where the player has to find their way to the exit. While running into the maze, the player has to remember the different numbers written on the walls of the maze. Lastly, the player has to choose the correct numbers to end the game.",
-        video: "/videos/vr/MAzeVR.mp4"
+        video: "https://youtu.be/t5IBD2ywUCA"
       },
       {
         title: "GYM VR",
         description: "This project is a visual representation of a Gymnasium, featuring different equipment like barbells, dumbbells, ladders, poles, basketballs, and walls. This project helps to improve the fitness of the player as there are tutorials for beginners.",
-        video: "/videos/vr/GymVR.mp4"
+        video: "https://youtu.be/gtlyDrA3mrE"
       },
       {
         title: "Find My Key - VR",
         description: "Your neighbor's children are very mischievous, hiding your house key somewhere, and now you have to collect coins to get the hints to find your door key. Good Luck!",
-        video: "/videos/vr/FindMyKey.mp4"
+        video: "https://youtu.be/Px2rzZOWnTg"
       }
     ]
   },
