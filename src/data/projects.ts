@@ -116,6 +116,11 @@ export const categories: Record<string, CategoryData> = {
         title: "iPhone 18 Pro — Official Teaser Trio Commercial",
         description: "A 20-second cinematic commercial teaser showcasing three iPhone 18 Pro hero devices (Sierra Blue, Burgundy, and Space Black) with matching dynamic OLED displays.\n\nKey Highlights:\n• Complete 360-degree orbital camera choreography capturing the Grade 5 titanium chassis, refined camera plateau with LiDAR scanner, and customizable Action Button.\n• 480 frames rendered in Blender 5.1 EEVEE-Next with real-time raytraced global illumination and fast GI.\n• Custom studio lighting with procedural background composited via alpha transparency.\n• Parametric sound design synthesized directly in 48kHz stereo — detuned sub-bass drones, mechanical shutter clicks, and trailer climax impacts.\n• Dynamic typography overlays highlighting flagship hardware features.",
         video: "https://youtu.be/viFzPBUlovA"
+      },
+      {
+        title: "DanzerArt Motion Logo",
+        description: "I created a 3D animated motion video logo intro for our own startup.",
+        video: "https://youtu.be/1rKOC5aytIo"
       }
     ]
   },
@@ -137,11 +142,6 @@ export const categories: Record<string, CategoryData> = {
         title: "Top Down Shooting",
         description: "A prototype segment of my project working on a TopDown shooting game system for one of our clients.",
         video: "https://youtu.be/QrZj_QP6rXU"
-      },
-      {
-        title: "DanzerArt Motion Logo",
-        description: "I created a 3D animated motion video logo intro for our own startup.",
-        video: "https://youtu.be/1rKOC5aytIo"
       },
       {
         title: "Mechanic Arm & Pistol",
