@@ -119,7 +119,7 @@ export const categories: Record<string, CategoryData> = {
       },
       {
         title: "DanzerArt Motion Logo",
-        description: "I created a 3D animated motion video logo intro for our own startup.",
+        description: "A 3D animated motion logo reveal and brand identity intro crafted for the DanzerArt creative studio startup.\n\nKey Highlights:\n• Dynamic 3D typography and geometric logo transformation using customized easing and spatial choreography.\n• Physically-based shader materials with sleek metallic bevels, dynamic specular highlights, and ambient light bounces.\n• Cinematic camera motion with depth-of-field focus pull to deliver high-impact brand recognition.\n• Synchronized audio design matched to the logo's reveal cadence for intros, digital showcases, and video presentations.",
         video: "https://youtu.be/1rKOC5aytIo"
       }
     ]
