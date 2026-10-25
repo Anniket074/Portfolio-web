@@ -108,6 +108,17 @@ export const categories: Record<string, CategoryData> = {
       }
     ]
   },
+  motion: {
+    title: "3D Motion & Commercials",
+    description: "Cinematic 3D commercial teasers, product showcases, and procedural motion design crafted with high-fidelity rendering, custom audio soundscapes, and advanced motion choreography.",
+    items: [
+      {
+        title: "iPhone 18 Pro — Official Teaser Trio Commercial",
+        description: "A 20-second cinematic commercial teaser showcasing three iPhone 18 Pro hero devices (Sierra Blue, Burgundy, and Space Black) with matching dynamic OLED displays.\n\nKey Highlights:\n• Complete 360-degree orbital camera choreography capturing the Grade 5 titanium chassis, refined camera plateau with LiDAR scanner, and customizable Action Button.\n• 480 frames rendered in Blender 5.1 EEVEE-Next with real-time raytraced global illumination and fast GI.\n• Custom studio lighting with procedural background composited via alpha transparency.\n• Parametric sound design synthesized directly in 48kHz stereo — detuned sub-bass drones, mechanical shutter clicks, and trailer climax impacts.\n• Dynamic typography overlays highlighting flagship hardware features.",
+        video: "https://youtu.be/viFzPBUlovA"
+      }
+    ]
+  },
   "3d": {
     title: "3D Game / Models",
     description: "Here, you can see my 3D projects. Some of them are projects I made for clients, and some are for learning purposes. Please go through and give your valuable feedback.",

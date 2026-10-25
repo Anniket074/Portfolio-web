@@ -4,6 +4,12 @@ import Link from "next/link";
 export default function Projects() {
   const projects = [
     {
+      title: "3D Motion & Commercials",
+      description: "Cinematic commercial teasers, 3D product animations, and procedural motion design with custom audio.",
+      tags: ["3D Animation", "Blender", "Motion Design", "CGI"],
+      href: "/projects/motion",
+    },
+    {
       title: "VR Development",
       description: "Immersive virtual reality experiences and interactive virtual worlds built for modern VR headsets.",
       tags: ["Unity", "VR", "C#"],
@@ -33,7 +39,7 @@ export default function Projects() {
           <div className="h-1 w-24 bg-white/20 rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
           {projects.map((project, index) => (
             <Link 
               href={project.href}
