@@ -2,6 +2,7 @@ export type ProjectItem = {
   title: string;
   description: string;
   video?: string;
+  vertical?: boolean;
 };
 
 export type CategoryData = {
@@ -152,6 +153,42 @@ export const categories: Record<string, CategoryData> = {
         title: "Low Poly Models",
         description: "A collection of aesthetic low-poly models, featuring 8 different structural variants, developed precisely for a client.",
         video: "/3D Media/Low Poly Models.jpeg"
+      }
+    ]
+  },
+  mobile: {
+    title: "3D Mobile Games",
+    description: "Five complete hyper-casual 3D mobile games that I designed, built and tuned on my own — covering physics, scoring and combo systems, level progression, currency and shop systems, and mobile UI. All footage below is captured from my own builds.",
+    items: [
+      {
+        title: "Typhoon Crush 3D",
+        description: "A physics arcade game where a swirling vortex drags scattered blocks across the board and consumes them.\n\nBuilt:\n• Force-based physics with a moving attractor that pulls rigidbodies in\n• Combo chain that reached past x120 during a single run\n• Coin economy with an in-game shop\n• Level progression with pause controls\n\nLearned: the combo counter has to react faster than the physics settles. When it updated after the blocks came to rest, chaining stopped feeling earned — it now fires on contact.",
+        video: "https://youtu.be/LSJwnYG6ZAo",
+        vertical: true
+      },
+      {
+        title: "Ricochet",
+        description: "A bouncing shot puzzle spanning 25 levels, where every shot has to be planned off the walls.\n\nBuilt:\n• Trajectory preview that traces every wall bounce before the shot is fired\n• Raycast and reflection maths kept exactly in sync with the real physics\n• Shots and targets counters driving the win and lose states\n• Level select reached from the in-game menu\n\nLearned: the preview has to match the real shot exactly. One degree of difference and players stop trusting the aim guide entirely, so the prediction had to be treated as part of the physics rather than as decoration.",
+        video: "https://youtu.be/mSynP6Cr5E0",
+        vertical: true
+      },
+      {
+        title: "Match 3D",
+        description: "A 3D pair-matching puzzle built around fast, unambiguous validation.\n\nBuilt:\n• Two comparison slots that validate a pair the moment both pieces are chosen\n• Full menu flow: continue, level select, settings and quit\n• Separate music and SFX volume sliders plus a vibration toggle\n• Progress saved between sessions\n\nLearned: a wrong pair has to be rejected instantly and visibly. Any delay makes the player second-guess their own input, and that hesitation is what makes a matching game feel unfair rather than hard.",
+        video: "https://youtu.be/lMsLQg9wj7E",
+        vertical: true
+      },
+      {
+        title: "Paint Roller 3D",
+        description: "A grid painting puzzle spanning 29 levels.\n\nBuilt:\n• Tile grid where the roller paints every cell it travels over\n• Raised obstacles that block the path and force the route to be planned before moving\n• 29-level progression with an in-game progress bar\n• Audio, settings and exit controls built into the level screen\n\nLearned: at 29 levels the bottleneck stops being the mechanic and becomes the pipeline. Fast authoring, testing and reordering of stages mattered far more than adding new mechanics.",
+        video: "https://youtu.be/Zb-V3fWADAM",
+        vertical: true
+      },
+      {
+        title: "Color Sink 3D",
+        description: "A gravity sorting puzzle where coloured pieces settle into matching groups around a central sink.\n\nBuilt:\n• Gravity settling for cube and sphere pieces into matching colour groups\n• A central sink that consumes and clears matched pieces\n• Level progression across 24+ stages with level resets\n• Settings reachable mid-run\n\nLearned: players need to see the sink doing its job. When a piece vanished without clear feedback, the board read as broken rather than solved, so the feedback around the mechanic mattered more than the matching itself.",
+        video: "https://youtu.be/DSCluwVv1YU",
+        vertical: true
       }
     ]
   }

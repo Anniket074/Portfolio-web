@@ -44,6 +44,8 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
     notFound();
   }
 
+  const hasVertical = data.items.some((item) => item.vertical);
+
   return (
     <main className="bg-[#121212] min-h-screen text-white relative font-sans p-8 md:p-16 lg:p-24 selection:bg-white/20">
       <div className="max-w-5xl mx-auto">
@@ -63,7 +65,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className={hasVertical ? "grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10" : "grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"}>
           {data.items.map((project, idx) => (
             <div 
               key={idx}
@@ -71,7 +73,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
             >
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
               
-              <div className="w-full aspect-video bg-white/5 rounded-xl mb-8 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-colors overflow-hidden relative">
+              <div className={`w-full ${project.vertical ? "aspect-[9/16]" : "aspect-video"} bg-white/5 rounded-xl mb-8 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-colors overflow-hidden relative`}>
                 {project.video ? (() => {
                   const youtubeEmbed = getYouTubeEmbedUrl(project.video);
                   if (youtubeEmbed) {

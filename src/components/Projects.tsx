@@ -4,6 +4,12 @@ import Link from "next/link";
 export default function Projects() {
   const projects = [
     {
+      title: "3D Mobile Games",
+      description: "Five complete hyper-casual 3D mobile games built solo — physics, combo and economy systems, level progression and mobile UI.",
+      tags: ["Unity", "C#", "Mobile", "Gameplay Systems"],
+      href: "/projects/mobile",
+    },
+    {
       title: "3D Motion & Commercials",
       description: "Cinematic commercial teasers, 3D product animations, and procedural motion design with custom audio.",
       tags: ["3D Animation", "Blender", "Motion Design", "CGI"],
