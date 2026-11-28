@@ -27,10 +27,10 @@ export default function Overlay() {
           className="absolute inset-0 flex flex-col items-center justify-end pb-24 md:pb-32 text-center px-4"
         >
           <h1 className="text-4xl md:text-7xl font-bold tracking-tighter text-white drop-shadow-2xl mb-4">
-            Anniket
+            Anniket Prajapati
           </h1>
           <p className="text-lg md:text-2xl text-white/80 font-light tracking-wide drop-shadow-lg mb-8">
-            Senior Unity & VR Developer • Crafting Immersive Worlds
+            Unity Developer • Gameplay Systems, XR & 3D
           </p>
           <a href="/cv" className="pointer-events-auto px-8 py-4 rounded-full bg-white text-black font-semibold tracking-wide hover:scale-105 transition-transform duration-300 shadow-[0_0_40px_rgba(255,255,255,0.3)]">
             Explore My Expertise
@@ -46,7 +46,7 @@ export default function Overlay() {
             Proven Global Experience
           </h2>
           <p className="mt-4 text-white/70 text-lg md:text-xl max-w-md drop-shadow-md">
-            Delivered 50+ high-quality Unity and VR applications for clients across the US, UK, and Germany, maintaining a near-perfect 4.9/5 satisfaction rating.
+            35+ delivered client projects for studios and brands across the US, UK and Germany, with 29 publicly showcased builds and a 4.9/5 rating across 22 verified client reviews.
           </p>
         </motion.div>
 
@@ -59,7 +59,7 @@ export default function Overlay() {
             Specialized in Virtual Reality
           </h2>
           <p className="mt-4 text-white/70 text-lg md:text-xl max-w-md drop-shadow-md">
-            Engineered 35+ cutting-edge Meta Quest experiences featuring advanced physics, intuitive interactions, and optimized performance.
+            10 VR applications on Meta Quest — including a Doritos-branded arcade piece — with physics-based interaction and standalone performance tuning.
           </p>
         </motion.div>
 
